@@ -1,5 +1,6 @@
 import "./about.css";
-import Award from "../../img/award.png";
+// import Award from "../../img/award.png";
+import Aboutme from "../../img/aboutme.png";
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         <div className="a-card bg"></div>
         <div className="a-card">
           <img
-            src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            src={Aboutme}
             alt=""
             className="a-img"
           />
@@ -17,16 +18,18 @@ const About = () => {
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
         <p className="a-sub">
-          It is a long established fact that a reader will be distracted by the
-          readable content.
+          I'm a software developer, react ninja, and vegan foodie based in Raleigh, NC.
         </p>
         <p className="a-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+          Proficient in front-end design, back-end architecture, and graphic design, 
+          I integrate user-centric designs with advanced functionalities. 
+          I'm dedicated to transforming complex requirements into innovative digital solutions, 
+          employing a mix of technical prowess and creative intuition to ensure project success. 
+          My tech stack includes: html/css, javascript, python, react, node.js, mysql.
+          
+          
         </p>
-        <div className="a-award">
+        {/* <div className="a-award">
           <img src={Award} alt="" className="a-award-img" />
           <div className="a-award-texts">
             <h4 className="a-award-title">International Design Awards 2021</h4>
@@ -35,7 +38,7 @@ const About = () => {
               and fugit.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

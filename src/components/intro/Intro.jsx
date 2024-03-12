@@ -7,20 +7,19 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My name is</h2>
-          <h1 className="i-name">John Burton</h1>
+          <h1 className="i-name">Caila Bridges</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">UI/UX Designer</div>
-              <div className="i-title-item">Photographer</div>
-              <div className="i-title-item">Writer</div>
-              <div className="i-title-item">Content Creator</div>
+              <div className="i-title-item">Software Developer</div>
+              <div className="i-title-item">React Ninja</div>
+              <div className="i-title-item">Vegan Foodie</div>
             </div>
           </div>
           <p className="i-desc">
-            I design and develop services for customers of all sizes,
-            specializing in creating stylish, modern websites, web services and
-            online stores.
+          I focus on crafting intricate web applications that seamlessly blend 
+          form and function to deliver exceptional user experiences. 
+          My expertise spans both front-end and back-end development, 
+          enabling me to create tailored solutions that precisely meet the evolving needs of clients.
           </p>
         </div>
         <svg
