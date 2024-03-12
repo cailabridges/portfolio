@@ -1,0 +1,30 @@
+import React from 'react';
+// import Toggle from './Toggle'; // Import the Toggle component
+import "./navbar.css"; // Import the CSS for styling the navbar
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <img src="/path/to/logo.png" alt="Logo" />
+      </div>
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <a href="#home">Home</a>
+        </li>
+        <li className="nav-item">
+          <a href="#about">About</a>
+        </li>
+        <li className="nav-item">
+          <a href="#my-work">My Work</a>
+        </li>
+        <li className="nav-item">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      {/* <Toggle /> Include the Toggle component here */}
+    </nav>
+  );
+};
+
+export default Navbar;
