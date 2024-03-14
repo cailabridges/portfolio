@@ -28,5 +28,9 @@
     font-size: 16px; /* Adjust the font size as needed */
     font-weight: bold; /* Adjust the font weight as needed */
   }
-  
+
+  .navbar-toggle {
+    margin-right: 40px; /* Adjust the spacing between toggle and navigation items */
+  }
+
   

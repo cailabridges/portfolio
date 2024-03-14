@@ -1,6 +1,6 @@
-import React from 'react';
-// import Toggle from './Toggle'; // Import the Toggle component
+import React from "react";
 import "./navbar.css"; // Import the CSS for styling the navbar
+import Toggle from "../toggle/Toggle";
 
 const Navbar = () => {
   return (
@@ -21,8 +21,11 @@ const Navbar = () => {
         <li className="nav-item">
           <a href="#contact">Contact</a>
         </li>
+        <li className="navbar-toggle">
+        <Toggle />
+      </li>
       </ul>
-      {/* <Toggle /> Include the Toggle component here */}
+      
     </nav>
   );
 };
