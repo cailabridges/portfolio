@@ -6,6 +6,7 @@ import ProductList from "./components/productList/ProductList";
 import Toggle from "./components/toggle/Toggle";
 import Navbar from "./components/navbar/Navbar";
 
+
 import { ThemeContext } from "./context";
 
 const App = () => {

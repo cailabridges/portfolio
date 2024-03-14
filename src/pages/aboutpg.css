@@ -1,0 +1,39 @@
+/* about.css */
+
+.a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  .a-left,
+  .a-right {
+    flex: 1;
+  }
+  
+  .a-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .a-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .a-sub {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .a-desc {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* You can add additional styling for awards section if needed */
+  
