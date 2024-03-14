@@ -1,36 +1,49 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff; /* Change the background color as needed */
-  }
-  
-  
-  .navbar-nav {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin-right: 20px; /* Adjust the spacing between navigation items */
-  }
-  
-  .nav-item:last-child {
-    margin-right: 0;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff; /* Change the background color as needed */
+  position: fixed; /* Make the navbar fixed */
+ 
+  top: 0; /* Position it at the top */
+  width: 100%; /* Set the width to 100% */
+  z-index: 999; /* Set a higher z-index to ensure it's on top of other content */
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px; /* Adjust the spacing between navigation items */
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333333; 
+  font-size: 16px; 
+  font-weight: 300; 
+}
+
+.navbar-toggle {
+  margin-right: 80px; 
+}
+
+@media screen and (max-width: 480px) {
+
   .nav-item a {
-    text-decoration: none;
-    color: #333333; /* Change the text color as needed */
-    font-size: 16px; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
+    font-size: 14px; 
+  }
+  .nav-item {
+    margin-right: 10px; 
   }
 
-  .navbar-toggle {
-    margin-right: 40px; /* Adjust the spacing between toggle and navigation items */
-  }
-
-  
+}
