@@ -1,39 +1,102 @@
-/* about.css */
+/* AboutPg.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-.a {
-    display: flex;
-    justify-content: space-between;
+.about-container {
+  margin-top: 60px;
+  padding: 50px;
+}
+
+.about-top {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-left {
+  margin-right: 50px;
+}
+
+.about-img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.about-header {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 20px;
+  color: #666;
+}
+
+.about-content {
+  max-width: 800px;
+  text-align: left;
+}
+
+.about-desc {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-skills {
+  margin-top: 50px;
+}
+
+.about-skills-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-skills-item {
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .about-top {
+    flex-direction: column;
     align-items: center;
-    padding: 50px 20px;
   }
-  
-  .a-left,
-  .a-right {
-    flex: 1;
-  }
-  
-  .a-img {
+
+  .about-img {
     width: 100%;
     max-width: 400px;
-    height: auto;
-  }
-  
-  .a-title {
-    font-size: 36px;
-    font-weight: bold;
     margin-bottom: 20px;
   }
-  
-  .a-sub {
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 20px;
+
+  .about-left {
+    margin-right: 0;
   }
-  
-  .a-desc {
-    font-size: 18px;
-    line-height: 1.6;
+
+  .about-right {
+    text-align: center;
   }
-  
-  /* You can add additional styling for awards section if needed */
-  
+}

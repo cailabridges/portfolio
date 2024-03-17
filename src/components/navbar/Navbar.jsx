@@ -2,7 +2,7 @@ import React from "react";
 import "./navbar.css"; // Import the CSS for styling the navbar
 import Toggle from "../toggle/Toggle";
 
-const Navbar = () => {
+const Navbar = ({ setCurrentPage }) => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -13,7 +13,7 @@ const Navbar = () => {
           <a href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a href="/About">About</a>
+        <a href="#about" onClick={() => setCurrentPage("about")}>About</a>
         </li>
         <li className="nav-item">
           <a href="#my-work">My Work</a>

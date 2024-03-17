@@ -1,47 +1,46 @@
+// AboutPg.jsx
+import React from "react";
 import "./aboutpg.css";
-// import Award from "../../img/award.png";
-import Aboutme from "../../img/aboutme.png";
+import Aboutme from "../img/aboutme.png";
 
-const About = () => {
+const AboutPg = () => {
   return (
-    <div className="a">
-      <div className="a-left">
-        <div className="a-card bg"></div>
-        <div className="a-card">
-          <img
-            src={Aboutme}
-            alt=""
-            className="a-img"
-          />
+    <div className="about-container">
+      <div className="about-top">
+        <div className="about-left">
+          <img src={Aboutme} alt="About Me" className="about-img" />
         </div>
-      </div>
-      <div className="a-right">
-        <h1 className="a-title">About Me</h1>
-        <p className="a-sub">
-          I'm a software developer, react ninja, and vegan foodie based in Raleigh, NC.
-        </p>
-        <p className="a-desc">
-          Proficient in front-end design, back-end architecture, and graphic design, 
-          I integrate user-centric designs with advanced functionalities. 
-          I'm dedicated to transforming complex requirements into innovative digital solutions, 
-          employing a mix of technical prowess and creative intuition to ensure project success. 
-          My tech stack includes: html/css, javascript, python, react, node.js, mysql.
-          
-          
-        </p>
-        {/* <div className="a-award">
-          <img src={Award} alt="" className="a-award-img" />
-          <div className="a-award-texts">
-            <h4 className="a-award-title">International Design Awards 2021</h4>
-            <p className="a-award-desc">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
-              and fugit.
+        <div className="about-right">
+          <div className="about-header">
+            <h1 className="about-title">About Me</h1>
+            <p className="about-subtitle">Passionate Software Developer | React Ninja | Vegan Foodie</p>
+          </div>
+          <div className="about-content">
+            <p className="about-desc">
+              Hi there! I'm a passionate software developer, specializing in React development and UI/UX design. Based in Raleigh, NC, I love exploring new technologies and building innovative solutions that make a difference.
+            </p>
+            <p className="about-desc">
+              With a strong background in front-end development and graphic design, I excel at creating visually appealing and user-friendly interfaces. My technical expertise includes HTML/CSS, JavaScript, React, Node.js, and MySQL, allowing me to tackle diverse challenges across the full stack.
+            </p>
+            <p className="about-desc">
+              Outside of coding, I'm an avid vegan foodie and enjoy experimenting with plant-based recipes. I also love hiking, photography, and exploring new places in my free time.
             </p>
           </div>
-        </div> */}
+        </div>
+      </div>
+      <div className="about-skills">
+        <h2 className="about-skills-title">Skills</h2>
+        <div className="about-skills-list">
+          <span className="about-skills-item">HTML/CSS</span>
+          <span className="about-skills-item">JavaScript</span>
+          <span className="about-skills-item">React</span>
+          <span className="about-skills-item">Node.js</span>
+          <span className="about-skills-item">MySQL</span>
+          <span className="about-skills-item">UI/UX Design</span>
+        </div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default AboutPg;
