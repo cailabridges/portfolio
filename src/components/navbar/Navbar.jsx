@@ -27,7 +27,7 @@ const Navbar = ({ setCurrentPage }) => {
           </a>
         </li>
         <li className="nav-item">
-          <a href="#orojects" onClick={() => handleNavigation("projects")}>
+          <a href="#projects" onClick={() => handleNavigation("projects")}>
            Projects
           </a>
         </li>
