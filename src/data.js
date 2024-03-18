@@ -6,7 +6,7 @@ export const products = [
   },
   {
     id: 2,
-    img: "https://i.ibb.co/hm99jDd/wordly-weather-thumbnail-1.png",
+    img: "https://i.ibb.co/QYChtjh/Long-Thumbnail-Images.png",
     link: "https://worldlyweather.netlify.app/",
   },
   {

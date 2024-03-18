@@ -3,33 +3,29 @@ import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import { useContext, useRef, useState } from "react";
-import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false)
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+  const serviceID = "service_st3woal";
+  const templateID = "template_gu7zwso";
+  const publicKey = "2bqmw7PRkCwpiJm-Z";
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_rrvnzco",
-        "template_3v5nih4",
-        formRef.current,
-        "user_DrriDPTGKO2Zj4RDXCA6W"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true)
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+
+    emailjs.sendForm(serviceID, templateID, formRef.current, publicKey)
+      .then(() => {
+        setDone(true);
+        console.log('Form submitted successfully');
+      })
+      .catch((error) => {
+        console.error('Error submitting form:', error);
+      });
   };
 
   return (
@@ -64,7 +60,7 @@ const Contact = () => {
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
             <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
             <button>Submit</button>
-            {done && "Thank you..."}
+            {done && <p>Thank you!</p>}
           </form>
         </div>
       </div>
