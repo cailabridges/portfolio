@@ -1,8 +1,9 @@
-import "./contact.css";
+import "./contactpg.css";
 import { Phone as PhoneIcon, Email as EmailIcon, LinkedIn as LinkedInIcon, GitHub as GitHubIcon } from '@material-ui/icons'; // Import Material-UI icons
 import { useContext, useRef, useState } from "react";
 import { ThemeContext } from "../../context";
 import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
   const formRef = useRef();

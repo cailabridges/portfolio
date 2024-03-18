@@ -1,7 +1,7 @@
 // AboutPg.jsx
 import React from "react";
 import "./aboutpg.css";
-import Aboutme from "../img/aboutme.png";
+import Aboutme from "../../img/aboutme.png";
 
 const AboutPg = () => {
   return (
