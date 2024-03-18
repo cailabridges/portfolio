@@ -1,7 +1,5 @@
 import "./contact.css";
-import Phone from "../../img/phone.png";
-import Email from "../../img/email.png";
-import Address from "../../img/address.png";
+import { Phone as PhoneIcon, Email as EmailIcon, LinkedIn as LinkedInIcon, GitHub as GitHubIcon } from '@material-ui/icons'; // Import Material-UI icons
 import { useContext, useRef, useState } from "react";
 import { ThemeContext } from "../../context";
 import emailjs from 'emailjs-com';
@@ -28,6 +26,10 @@ const Contact = () => {
       });
   };
 
+  const iconStyle = {
+    color: darkMode ? "#fff" : "#000", // Set the color based on dark mode
+  };
+
   return (
     <div className="c">
       <div className="c-bg"></div>
@@ -36,16 +38,20 @@ const Contact = () => {
           <h1 className="c-title">Let's discuss your project</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
+              <PhoneIcon className="c-icon" style={iconStyle} />
               +1 646 644 5316
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src={Email} alt="" />
+              <EmailIcon className="c-icon" style={iconStyle} />
               bridgescaila@gmail.com
             </div>
-            <div className="c-info-item">
-              <img className="c-icon" src={Address} alt="" />
-              245 King Street, Touterie Victoria 8520 Australia
+            <div className="c-info-item social-icons">
+              <a href="https://www.linkedin.com/in/caila-bridges-2557bb293/" target="_blank" rel="noreferrer">
+                <LinkedInIcon className="c-icon" style={iconStyle} />
+              </a>
+              <a href="https://github.com/cailabridges" target="_blank" rel="noreferrer">
+                <GitHubIcon className="c-icon" style={iconStyle} />
+              </a>
             </div>
           </div>
         </div>

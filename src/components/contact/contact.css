@@ -1,5 +1,5 @@
 .c {
-  height: 100vh;
+  height: 85vh;
   position: relative;
 }
 
@@ -35,7 +35,7 @@
 .c-info-item {
   display: flex;
   align-items: center;
-  margin: 50px 0px;
+  margin: 20px 0px;
   font-weight: 300;
   width: 70%;
 }
@@ -44,6 +44,19 @@
   width: 30px;
   height: 30px;
   margin-right: 20px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons .c-icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.social-icons a {
+  text-decoration: none;
 }
 
 .c-desc {
@@ -83,7 +96,7 @@ button {
 @media screen and (max-width: 480px) {
   .c-wrapper {
     flex-direction: column;
-    padding: 0px 50px;
+    padding: 50px;
   }
 
   .c-title {

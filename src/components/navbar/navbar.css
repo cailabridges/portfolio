@@ -2,10 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #ffffff; /* Change the background color as needed */
   position: fixed; /* Make the navbar fixed */
- 
   top: 0; /* Position it at the top */
   width: 100%; /* Set the width to 100% */
   z-index: 999; /* Set a higher z-index to ensure it's on top of other content */
@@ -36,14 +35,42 @@
 .navbar-toggle {
   margin-right: 80px; 
 }
+.navbar-logo {
+  width: 150px; 
+  height: auto; 
+}
 
+.logo-large {
+  display: block; 
+  width: 200px;
+  height: auto; 
+}
+
+.logo-small {
+  display: none;
+
+}
 @media screen and (max-width: 480px) {
-
+  .navbar{
+    padding: 0px 10px;
+    position: fixed;
+  }
   .nav-item a {
-    font-size: 14px; 
+    font-size: 12px; 
   }
   .nav-item {
-    margin-right: 10px; 
+    margin-right: 12px; 
+    white-space: nowrap;
   }
+  .logo-large {
+    display:none
+  }
+
+  .logo-small {
+    display: block;
+    width: 75px; 
+    height: auto; 
+  }
+
 
 }

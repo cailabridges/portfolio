@@ -96,6 +96,9 @@
   .i {
     flex-direction: column;
   }
+  .i-intro {
+    margin-top: 60px ;
+  }
 
   .i-left-wrapper {
     padding: 10px;
@@ -107,6 +110,9 @@
 
   .i-desc{
     display: none;
+  }
+  .i-title{
+    margin-top: 20px;
   }
   .i-title-item{
     display: block;

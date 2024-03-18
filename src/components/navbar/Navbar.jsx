@@ -1,12 +1,15 @@
 import React from "react";
 import "./navbar.css"; // Import the CSS for styling the navbar
 import Toggle from "../toggle/Toggle";
+import logo from "../../img/logo.svg"
+import logoSm from "../../img/logoSm.svg"
 
 const Navbar = ({ setCurrentPage }) => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="/path/to/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" className="logo-large" />
+        <img src={logoSm} alt="Logo" className="logo-small" />
       </div>
       <ul className="navbar-nav">
         <li className="nav-item">
