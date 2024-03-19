@@ -11,13 +11,13 @@
     margin: 0 10px;
     font-size: 30px;
     color: #fff;
-    cursor: pointer; /* Ensure pointer cursor */
+    cursor: pointer; 
   }
   
   .link {
     text-decoration: none;
-    color: inherit; /* Inherit text color */
+    color: inherit; 
     display: inline-block;
-    vertical-align: top; /* Align links vertically with icons */
+    vertical-align: top; 
   }
   

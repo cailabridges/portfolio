@@ -33,7 +33,7 @@ const Footer = () => {
       <a href="https://www.linkedin.com/in/caila-bridges-2557bb293/" target="_blank" rel="noreferrer" className={classes.icon}>
         <LinkedIn />
       </a>
-      <a href="https://github.com/cailabridges" target="_blank" rel="noreferrer" className={classes.icon}>
+      <a href="https://github.com/cailabridges/portfolio" target="_blank" rel="noreferrer" className={classes.icon}>
         <GitHub />
       </a>
     </div>
